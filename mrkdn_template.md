@@ -6,7 +6,11 @@ author:
 date:
 - 13/10/2020
 theme:
-- Copenhagen
+- default
+colortheme:
+- whale
+outertheme:
+- infolines
 header-includes:
 - |
   ```{=latex}
@@ -14,11 +18,15 @@ header-includes:
   \setbeamertemplate{footline}{%
     \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
       \scriptsize\insertframenumber}}}\hspace*{5pt}}
-      \beamertemplatenavigationsymbolsempty
+  \beamertemplatenavigationsymbolsempty
+  %\setbeamercovered{transparent} % For making pauses transparent instead of invisible
   ```
 ---
+# Section1
 
-# Slide 1
+## Subsection 1.1
+
+### Slide 1
 
 <!---
 This is a comment.
@@ -35,7 +43,7 @@ The objectives of the current study are...
 
 Write a bit more about it...
 
-# Slide 2
+### Slide 2
 
 <!---
 incremental list
@@ -49,7 +57,9 @@ incremental list
 
 :::
 
-# Slide 3
+## Subsection 1.2
+
+### Slide 3
 
 <!---
 write display mode mathematical expressions in latex
@@ -68,8 +78,11 @@ write inline mathematical expressions in latex
 
 $E=mc^2$
 
+# Section 2
 
-# Slide 4
+## Subsection 2.1
+
+### Slide 4
 
 <!---
 Columns - Split slide vertically
@@ -88,14 +101,16 @@ This is a minor issue, due to...
 :::
 ::::::::::::::
 
-# Slide 5
+### Slide 5
 <!---
 Introduce a plot from a pdf file
 -->
 
 \includegraphics[page=1, width=0.9\linewidth]{plots/my_analysis.pdf}
 
-# Slide 6
+## Subsection 2.2
+
+### Slide 6
 
 <!---
 Introduce an image
@@ -103,7 +118,7 @@ Introduce an image
 
 ![This is the caption](images/DNA.png)
 
-# Slide 7
+### Slide 7
 <!---
 Introduce boxes for highlighting
 -->
@@ -120,7 +135,10 @@ Sample text in red box
 Sample text in green box. The title of the block is ``Examples".
 \end{examples}
 
-# Slide 8
+# Section 3
+
+## Subsection 3.1
+### Slide 8
 
 <!---
 A simple workflow plot with pauses
@@ -135,7 +153,9 @@ $$\Downarrow$$
 $$\Downarrow$$
 \framebox[1.3\width]{Step 4}
 
-# Slide 9
+## Subsection 3.2
+
+### Slide 9
 
 \centering
 **Thank you for your attention!**
