@@ -4,13 +4,17 @@ title:
 author:
 - My name
 date:
-- 13/10/2020
+- 23/10/2020
 theme:
 - default
 colortheme:
 - whale
 outertheme:
 - infolines
+innertheme:
+- circles
+fonttheme:
+- structuresmallcapsserif
 header-includes:
 - |
   ```{=latex}
@@ -19,7 +23,13 @@ header-includes:
     \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
       \scriptsize\insertframenumber}}}\hspace*{5pt}}
   \beamertemplatenavigationsymbolsempty
-  %\setbeamercovered{transparent} % For making pauses transparent instead of invisible
+  \setbeamercolor{section in head/foot}{bg=black,fg=white}
+  \setbeamercolor{itemize item}{fg=black}
+  %\setbeamercovered{transparent} % For making pauses transparent instead of invisible.
+  %\setbeameroption{show notes} % For creating extra slides with the notes on them.
+  %\setbeamertemplate{note page}[plain] % For converting the slides that include the notes into a plain format.
+  \usepackage[overridenote]{pdfpc} % For including the notes in the presentation using pdfpc (not in extra slides).
+  \usepackage{multimedia}
   ```
 ---
 # Section1
@@ -92,11 +102,14 @@ Columns - Split slide vertically
 ::: {.column width="50%"}
 \centering
 **Title 1**
+
 This is important, because...
 :::
 ::: {.column width="50%" align=center}
+
 \centering
 **Title 2**
+
 This is a minor issue, due to...
 :::
 ::::::::::::::
@@ -106,6 +119,7 @@ This is a minor issue, due to...
 Introduce a plot from a pdf file
 -->
 
+\center
 \includegraphics[page=1, width=0.9\linewidth]{plots/my_analysis.pdf}
 
 ## Subsection 2.2
@@ -156,6 +170,17 @@ $$\Downarrow$$
 ## Subsection 3.2
 
 ### Slide 9
+
+<!---
+Include a video that will play during presentation.
+You have to use pdfpc to present.
+-->
+
+\movie{\includegraphics[height=0.8\textheight]{images/apollo17.jpg}}{images/apollo17.avi}
+
+\note{This is a video}
+
+### Slide 10
 
 \centering
 **Thank you for your attention!**
