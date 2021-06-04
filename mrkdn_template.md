@@ -5,6 +5,8 @@ author:
 - My name
 date:
 - 23/10/2020
+bibliography:
+- ../../papers/bib.bib
 theme:
 - default
 colortheme:
@@ -167,9 +169,25 @@ $$\Downarrow$$
 $$\Downarrow$$
 \framebox[1.3\width]{Step 4}
 
+### Slide 9
+
+<!---
+Introduce a reference
+-->
+
+Seminal work done:
+
+- Study 1 [^fn1]
+- Study 2 [^fn2]
+- Study 3 [^fn3]
+
+[^fn1]: @Gaussian_derivation
+[^fn2]: @WATSON_1953
+[^fn3]: @Li_2011
+
 ## Subsection 3.2
 
-### Slide 9
+### Slide 10
 
 <!---
 Include a video that will play during presentation.
@@ -180,7 +198,7 @@ You have to use pdfpc to present.
 
 \note{This is a video}
 
-### Slide 10
+### Slide 11
 
 \centering
 **Thank you for your attention!**
