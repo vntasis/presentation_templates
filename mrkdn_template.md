@@ -7,6 +7,13 @@ date:
 - 23/10/2020
 bibliography:
 - ../../papers/bib.bib
+biblio-title: References
+biblio-style: nature
+biblatexoptions:
+- backend=biber
+- citestyle=authoryear
+- maxcitenames=3
+- maxbibnames=15
 theme:
 - default
 colortheme:
