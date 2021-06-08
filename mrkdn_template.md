@@ -3,6 +3,8 @@ title:
 - 'My study'
 author:
 - My name
+institute:
+- My group
 date:
 - 23/10/2020
 bibliography:
@@ -14,6 +16,8 @@ biblatexoptions:
 - citestyle=authoryear
 - maxcitenames=3
 - maxbibnames=15
+aspectratio: 169
+toc: true
 theme:
 - default
 colortheme:
@@ -39,6 +43,11 @@ header-includes:
   %\setbeamertemplate{note page}[plain] % For converting the slides that include the notes into a plain format.
   \usepackage[overridenote]{pdfpc} % For including the notes in the presentation using pdfpc (not in extra slides).
   \usepackage{multimedia}
+  \titlegraphic{
+    \includegraphics[height=1cm,keepaspectratio]{../../pictures/artix.png}%
+    \hfill%
+    \includegraphics[height=1cm,keepaspectratio]{../../pictures/arch-2.jpg}%
+  }
   ```
 ---
 # Section1
