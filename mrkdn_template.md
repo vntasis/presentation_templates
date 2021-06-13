@@ -43,6 +43,12 @@ header-includes:
   %\setbeamertemplate{note page}[plain] % For converting the slides that include the notes into a plain format.
   \usepackage[overridenote]{pdfpc} % For including the notes in the presentation using pdfpc (not in extra slides).
   \usepackage{multimedia}
+  % For positioning arbitrarily images and text boxes
+  % with the use of `textblock` environment
+  \usepackage[absolute,overlay]{textpos}
+  \setlength{\TPHorizModule}{1mm}
+  \setlength{\TPVertModule}{1mm}
+  % Logos
   \titlegraphic{
     \includegraphics[height=1cm,keepaspectratio]{../../pictures/artix.png}%
     \hfill%
