@@ -48,6 +48,9 @@ header-includes:
   \usepackage[absolute,overlay]{textpos}
   \setlength{\TPHorizModule}{1mm}
   \setlength{\TPVertModule}{1mm}
+  % For drawing stuff
+  %\usepackage{tikz}
+  %\setbeamertemplate{background}[grid][step=0.5cm]
   % Logos
   \titlegraphic{
     \includegraphics[height=1cm,keepaspectratio]{../../pictures/artix.png}%
